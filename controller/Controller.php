@@ -28,6 +28,9 @@ class Controller {
             case 'logout':
                 $this->showTelaDeLogoutView();
                 break;
+	   case 'roro':
+                $this->showtelaRoberta();
+                break;
         }
     }
     
@@ -41,6 +44,9 @@ class Controller {
      private function showTelaSobre(){
         include 'view/sobre.php';
     }
+	private function showtelaRoberta(){
+	include'view/eu.php';
+}
     
     private function showTelaDeLogoutView(){
         $custom = "ahahaha"; //mysql_
